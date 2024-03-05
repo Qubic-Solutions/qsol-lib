@@ -3,6 +3,8 @@ A Rust FFI library for custom miner integration with the Qubic Solutions Pool
 
 qsol-lib.h
 ```cpp
+
+
 /* Generated with cbindgen:0.26.0 */
 
 /* DO NOT MODIFY THIS MANUALLY! This file was generated using cbindgen. See RunCbindgen.py */
@@ -54,7 +56,7 @@ extern "C" {
 /// the pool will pick up the label (if provided)
 ///
 /// miner_id is required to be a valid CStr as well as a 60 character upper case qubic ID
-FfiConnectionReply connect(const int8_t *label, const int8_t *miner_id);
+FfiConnectionReply qsol_connect(const int8_t *label, const int8_t *miner_id);
 
 /// call this function every 10-20 seconds to keep the pool connection alive
 ///
